@@ -32,7 +32,7 @@ export const config = {
     {
       name: "老婆",
       id: "odtUE6fo4oLw7himK-YAje5KtM8U",
-      useTemplateId: "5cq60QvIyxhGGF3uBLcg8F7yaN2Pityc93KCyluee0w",
+      useTemplateId: "3nWrc3p_TVCjNFiDSNko7KIYasPT8flKOcM4ZupgY58",
       province: "北京",
       city: "北京",
       horoscopeDate: '12-12',           // bb的阳历生日, 仅用作获取星座运势
@@ -54,7 +54,7 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "5cq60QvIyxhGGF3uBLcg8F7yaN2Pityc93KCyluee0w",
+  CALLBACK_TEMPLATE_ID: "3nWrc3p_TVCjNFiDSNko7KIYasPT8flKOcM4ZupgY58",
 
   // 接收成功回调消息的微信号
   CALLBACK_USERS: [
