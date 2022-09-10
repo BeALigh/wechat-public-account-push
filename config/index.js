@@ -6,12 +6,12 @@ export const config = {
   // 公众号APP_ID
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_ID: "",
+  APP_ID: "wx9366e26cd7ff92b1",
 
   // 公众号APP_SECRET
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  APP_SECRET: "",
+  APP_SECRET: "2c2023e6e4aaa0887d51c0a22655e89b",
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
@@ -57,7 +57,7 @@ export const config = {
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
-        // 在一起的日子
+         在一起的日子
         {"keyword": "love_day", date: "2022-09-08"},
         // 结婚纪念日
         {"keyword": "marry_day", date: "2022-09-09"},
@@ -66,41 +66,23 @@ export const config = {
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆2",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆3",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
+      name: "老婆",
+      id: "odtUE6fo4oLw7himK-YAje5KtM8U",
+      useTemplateId: "5cq60QvIyxhGGF3uBLcg8F7yaN2Pityc93KCyluee0w",
+      //province: "北京",
+      city: "北京",
+      horoscopeDate: '12-12',           // bb的阳历生日, 仅用作获取星座运势
+      horoscopeDateType: '今日',        // 获取什么时候的星座运势
+      openUrl: "https://weibo.com/u/7382252680",    //ss与kk的恋爱日记
+      festivals: [
+      //老婆的阴历生日
+       {"type": "*生日", "name": "老婆", "year": "2000", "date": "11-17"},
+      ],
+      customizedDateList: [
+      //和老婆在一起的日子
+        {"keyword": "love_day", date: "2022-07-12"}
+      ]
+    }
   ],
 
   /**
@@ -108,15 +90,15 @@ export const config = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "",
+  CALLBACK_TEMPLATE_ID: "5cq60QvIyxhGGF3uBLcg8F7yaN2Pityc93KCyluee0w",
 
-  // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
+  // 接收成功回调消息的微信号
   CALLBACK_USERS: [
     {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "",
+      id: "odtUE6dOfkazvVDhMv8cAyDQxo7U",
     },
   ],
 
@@ -183,14 +165,36 @@ export const config = {
     * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }}
     * */
   SLOT_LIST: [
-    // 这样配置的话，就会每次发送这句话
-    {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
     // 这样配置的话，就会每次随机选一句话发送
     {"keyword": "lover_prattle", contents: [
       "因为太喜欢你，所以看谁都像是情敌。",
       "申请成为你爱里的永久居民。",
-      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
+      "我喜欢田野，而我愚笨。只能植荒十年，换得一时春生",
+      "世界上所有的相遇都是久别重逢",
+      "愿历尽千帆,归来仍少年",
+      "愿岁月可回首，且以深情共白头",
+      "草在结它的种子，风在摇它的叶子。我们站着不说话，就十分美好",
+      "你应该是一场梦，我应该是一阵风",
+      "愿你垂垂老矣，我可明我心",
+      "今夜我不关心人类，我只想你",
+      "哪里有人会喜欢孤独，不过是不喜欢失望",
+      "我走过许多地方的路，行过许多地方的桥，看过许多次数的云，喝过许多种类的酒，却只爱过一个正当最好年龄的人。",
+      "海底月是天上月，眼前人是心上人。",
+      "你是千堆雪，我是长街。怕日出一到，彼此瓦解。",
+      "答案很长，我准备用一生时间来回答，你准备听了吗？",
+      "春风再美也比不上你的笑，没见过你的人不会明了。",
+      "夜阑卧听风吹雨，铁马是你，冰河也是你。",
+      "余生还长，请多多指教。",
+      "每个人心里都有一团火，路过的人只看到烟",
+      "眼睛为她下着雨，心却为她打着伞，这就是爱情。",
+      "我为你翻山越岭，却无心看风景。",
+      "树在，山在，大地在，岁月在，我在，你还要怎样更好的世界？",
+      "遇见你之前，我没想过结婚，遇见你之后，结婚我没想过别人。",
+      "我不能给你多少感动，但有个词叫尽我所能",
+      "我希望以后不是我送你回家，而是我们一起回家",
+      "遇见你之后，感觉自己变成了一瓶可乐，一下被拧开，全身都冒着幸福的小泡泡",
       "遇见你，就好像捡到了100斤的运气",
+      
     ]},
   ],
 
